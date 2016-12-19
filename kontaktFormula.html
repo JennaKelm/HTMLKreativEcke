@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Kreativ</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="myStyle.css">
+    </head>
+    <body>
+        <header>
+            <h1>Kreativ Ecke</h1> 
+            <nav>
+                <!-- Obere NAvigation verweist nur auf eigene Seiten-->
+                <a  href="index.html">Start</a>
+                <a  href="Acryl.html">Acryl Malerei</a>
+                <a  href="Genaetes.html">Genähtes</a>
+                <a  href="Gestricktes.html">Gestrickt</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <!--Formular zur Kontakt aufnahem per E-Mail -->
+                <form class="tabelle" name="Formular1" action="mailto:Hier@wartet-der-server.de" method="post" enctype="text/plain" id="form1">
+                    <h3> Kontakt </h3>
+                    <div class="zeile">
+                        <label>Anrede</label><select name="anrede">
+                            <option value="frau">Frau</option>
+                            <option value="herr">Herr</option>
+                        </select>
+                    </div>
+                    <div class="zeile">
+                        <label>Vorname</label><input type="text" placeholder="Vorname" name="benutzer">
+                        <label>Nachname</label><input type="text" placeholder="Nachname" name="benutzer">
+                    </div> 
+                    <div class="zeile">
+                        <label>e-Mail</label><input type="email" name="email" placeholder="name@web.de">
+                    </div>
+                    <div class="zeile">
+                        <label id="labelarea">Ihre Nachricht</label><textarea rows="5" cols="20" placeholder="Bitte ausfüllen" name="DieNachricht"></textarea>
+                    </div>
+                    <div class="zeile">
+                        <label>Thema der Frage:</label><input type="checkbox" name="interesse1" value="malen">Akryl
+                        <input type="checkbox" name="interesse2" value="naehen">Nähen
+                        <input type="checkbox" name="interesse3" value="stricken">Stricken
+                        <input type="checkbox" name="interesse3" value="allgemein">Allgemein
+                    </div>
+                    <hr>
+                    <div class="zeile">
+                        <button type="submit">Senden</button> <button type="reset">Zurücksetzen</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+      <footer>
+            <!-- Logo unten links im Fuss-->
+            <figure>
+                <img class="Logo links" src="alBilder/Logo.png" alt="Logo">
+            </figure>
+        </footer>
+    </body>
+</html>
